@@ -1,0 +1,270 @@
+:root {
+    --primary-color: #006400; /* 墨绿色 */
+    --secondary-color: #2196F3;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding-top: 56px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.hero-section {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 100px 0;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.ai-chat {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#chat-messages {
+    background-color: #f8f9fa;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.case-study, .news-item {
+    transition: transform 0.3s ease;
+}
+
+.case-study:hover, .news-item:hover {
+    transform: scale(1.05);
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .d-flex {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+/* 在现有样式的基础上添加以下内容 */
+
+#agritrust-network {
+    position: relative;
+    overflow: hidden;
+}
+
+#backgroundCarousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#backgroundCarousel .carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#agritrust-network .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid white;
+}
+
+#agritrust-network .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255,255,255,0.2);
+}
+
+#agritrust-network .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#agritrust-network .card-subtitle {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+#agritrust-network .card-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+/* 在文件末尾添加以下内容 */
+
+.news-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid white;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255,255,255,0.2);
+}
+
+.news-item .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption .lead {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption .display-4 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#heroCarousel {
+    position: relative;
+}
+
+#heroCarousel .carousel-item {
+    height: 600px; /* 保持固定高度 */
+}
+
+#heroCarousel .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption.static-caption {
+    position: absolute;
+    bottom: auto;
+    top: 60%; /* 将标题位置移到距离顶部 60% 的位置 */
+    left: 50%;
+    transform: translate(-50%, -50%); /* 居中对齐 */
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.carousel-caption .display-4 {
+    font-size: 3rem; /* 增大字体尺寸 */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    white-space: nowrap; /* 确保文字在同一行显示 */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* 添加文字阴影以增加可读性 */
+}
+
+.carousel-caption .lead {
+    font-size: 1.8rem; /* 增大字体尺寸 */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* 添加文字阴影以增加可读性 */
+}
+
+/* 添加响应式设计 */
+@media (max-width: 768px) {
+    #heroCarousel .carousel-item {
+        height: 400px; /* 在小屏幕上减小高度 */
+    }
+
+    .carousel-caption.static-caption {
+        top: 60%; /* 保持一致的位置 */
+    }
+
+    .carousel-caption .display-4 {
+        font-size: 2.2rem; /* 在小屏幕上稍微减小字体大小 */
+    }
+
+    .carousel-caption .lead {
+        font-size: 1.3rem; /* 在小屏幕上稍微减小字体大小 */
+    }
+}
+
+#agritrust-network {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#agritrust-network h2,
+#agritrust-network p {
+    color: white;
+}
+
+#agritrust-network h2 {
+    font-size: 3rem; /* 增大字体大小 */
+    color: white;
+}
+
+#agritrust-network p.lead {
+    font-size: 1.5rem; /* 增大字体大小 */
+    color: white;
+}
+
+#agritrust-network .card {
+    background-color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+}
+
+#agritrust-network .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#agritrust-network .card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#agritrust-network .card-subtitle {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+#agritrust-network .card-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #333; /* 深灰色文字 */
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+/* 其余样式保持不变 */
